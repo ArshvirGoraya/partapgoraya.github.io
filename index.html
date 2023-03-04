@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author" content="Arshvir Goraya" />
+    <meta name="description" content="Partap Goraya's website" />
+
+    <meta name="keywords" content="Partap, Goraya, accounting, accountant" />
+
+    <title>Partap Goraya</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"
+    ></script>
+
+    <script defer src="contactEmail.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <nav class="navbar__top">
+        <a href="#" class="home">
+          <p>Partap Goraya</p>
+          <p class="home__accounting">Accounting</p>
+        </a>
+        <a class="number" href="#">TEL. ### ### ####</a>
+      </nav>
+
+      <section class="navbar__bottom">
+        <nav class="navbar__bottom-list">
+          <a href="#" class="navbar__bottom-link home">Home</a>
+          <a href="#" class="navbar__bottom-link">Page 2</a>
+          <a href="#" class="navbar__bottom-link">Page 3</a>
+        </nav>
+
+        <section class="navbar__bottom__navbar_burger-section">
+          <label for="navbar__burgerBTN-checkbox" class="navbar__burgerBTN">
+            <div class="navbar__burgerBTN__logo"></div>
+          </label>
+          <input
+            id="navbar__burgerBTN-checkbox"
+            class="navbar__burgerBTN-checkbox"
+            type="checkbox"
+          />
+
+          <nav class="navbar__bottom-list-burger">
+            <a href="#" class="navbar__bottom-link home">Home</a>
+            <a href="#" class="navbar__bottom-link">Page 2</a>
+            <a href="#" class="navbar__bottom-link">Page 3</a>
+          </nav>
+        </section>
+      </section>
+    </nav>
+    <img class="bg_image" src="images\calc1.jpg" />
+
+    <section class="hero">
+      <div>
+        <h1>Partap Goraya</h1>
+        <h3>CPA</h3>
+      </div>
+    </section>
+
+    <main class="main-section">
+      <section class="main-section__links main-section__childwrapper">
+        <div class="main-section__links-wrapper">
+          <a href="#" class="main-section__links-link">
+            Link
+            <img src="images\notes.jpg" />
+          </a>
+          <a href="#" class="main-section__links-link">
+            Link
+            <img src="images\notes.jpg" />
+          </a>
+          <a href="#" class="main-section__links-link">
+            Link
+            <img src="images\notes.jpg" />
+          </a>
+          <a href="#" class="main-section__links-link">
+            Link
+            <img src="images\notes.jpg" />
+          </a>
+        </div>
+      </section>
+
+      <article class="main-section__about main-section__childwrapper">
+        <div class="main-section__about-wrapper">
+          <h2>TEXT</h2>
+          <p>
+            Random Text: Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Nobis inventore delectus quos blanditiis impedit nemo error
+            consequuntur animi veritatis vero quo nostrum facilis, soluta
+            aliquid dignissimos provident commodi molestiae eum?
+          </p>
+        </div>
+      </article>
+
+      <div class="emailForm-parent main-section__childwrapper">
+        <div class="emailForm-Wrapper">
+          <form class="emailForm" method="post">
+            <label for="Email">Contact Email *</label>
+            <input
+              class="emailForm__input ContactEmail_input"
+              type="email"
+              required
+              name="Email"
+              autocomplete="off"
+              placeholder="email@example.com"
+            />
+
+            <label for="Message">Message *</label>
+            <textarea
+              class="emailForm__input Message_input"
+              name="Message"
+              required
+              rows="10"
+              autocomplete="off"
+              placeholder="accounting needs."
+            ></textarea>
+
+            <div class="emailForm__button-wrapper">
+              <input
+                class="emailForm__button"
+                name="Send"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+
+            <p class="notif-success">Email Received!</p>
+            <p class="notif-fail">
+              Email NOT Received: consider directly sending email to:
+              partapg@pgtax.ca
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; 2023 Partap Goraya. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
